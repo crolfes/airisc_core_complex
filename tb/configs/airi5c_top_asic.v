@@ -246,7 +246,7 @@ module airi5c_top_asic(
     .hresp(per_hresp_uart)
   );
   
-  airi5c_icap #(
+/*   airi5c_icap #(
     .BASE_ADDR(`ICAP_BASE_ADDR),
     .CLK_FREQ_HZ(`SYS_CLK_HZ))
   icap1(
@@ -267,7 +267,7 @@ module airi5c_top_asic(
     .hready(per_hready_icap),
     .hresp(per_hresp_icap)
   );
-  
+ */  
   airi5c_spi #(
     .BASE_ADDR(`SPI1_BASE_ADDR),
     .DEFAULT_MASTER(1),
